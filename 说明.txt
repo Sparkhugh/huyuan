@@ -5,9 +5,9 @@
 特效:
 搜索框关键字联想:ajax加载;
 
-cookie免登录 (php 路径:http://localhost/huyuan/kb-loginRegister/kbook-login.html);
+cookie免登录 (php 路径:http://localhost/huyuan/src/kb-loginRegister/kbook-login.html);
 
-注册 (php 路径:http://localhost/huyuan/kb-loginRegister/kbook-register.html);
+注册 (php 路径:http://localhost/huyuan/src/kb-loginRegister/kbook-register.html);
 
 购物车:点击"加入购物车",商品列表数量增加;点击"删除",商品数量减少或变为0;
 
