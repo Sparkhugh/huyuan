@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>孔网注册</title>
+		<link rel="icon" href="../images/pclogo.jpg">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" href="../css/index-kbook.css">
+		<script type="text/javascript" src="../js/ajax.js"></script>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<style type="text/css">
+			.registerPage{
+				width:350px;
+				height:150px;
+				margin:100px auto;
+				border:1px solid #eee;
+				border-radius:5px;
+				line-height:50px;
+			}
+			form span{
+				margin:0 10px;
+			}
+			form input{
+				width:250px;
+				height:25px;
+				line-height:25px;
+				border-radius:5px;
+				padding-left:3px;
+			}
+			input[type="submit"]{
+				border:none;
+				width:100px;
+				height:25px;
+				line-height:25px;
+				margin-left:100px;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div id="kb-top">
+			<div class="top-inner kb-container">
+				<div class="slogan-box">
+					<span class="text">网罗天下图书</span>
+					<span>传承中华文明</span>
+				</div>
+				<div class="top-right">
+					<ul class="clearfix">
+						<li class="login-resister">
+							<a href="javascript:;">登录/注册</a>
+							<div class="login-box">
+								<div class="login-btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+								<div class="register-btn">免费注册</div>
+							</div>
+						</li>
+						<li><a href="javascript:;">消息</a></li>
+						<li><a href="./kbook-shoppingcart.html" class="shoppingCart"><i class="iconfont icon-ai66"></i>购物车</a></li>
+						<li><a href="javascript:;">我的订单</a></li>
+						<li class="personal-center">
+							<a href="#">个人中心</a>
+							<ul class="personal-box">
+								<li><a href="javascript:;">我的订单</a></li>
+								<li><a href="javascript:;">收藏</a></li>
+								<li><a href="javascript:;">拍卖交易</a></li>
+								<li><a href="javascript:;">我的竞拍</a></li>
+								<li><a href="javascript:;">我的好友</a></li>
+								<li><a href="javascript:;">资金账户</a></li>
+							</ul>
+						</li>
+						<li class="seller-center">
+							<a href="#">卖家中心</a>
+							<ul class="seller-box">
+								<li><a href="javascript:;">免费摆书摊</a></li>
+								<li><a href="javascript:;">申请开店</a></li>
+								<li><a href="javascript:;">申请拍卖会员</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">客服</a></li>
+						<li><a href="javascript:;">手机版</a></li>
+						<li><a href="javascript:;">|</a></li>
+						<li><a href="javascript:;">送至北京</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="registerPage">
+			<form action="./register.php" method="POST">
+				<p><span>用户</span><input type="text" name="username"></p>
+				<p><span>密码</span><input type="password" name="password"></p>
+				<p><input type="submit" value="点击注册"></p>
+			</form>
+			<h2><a href="./cookie-zhuce.php">点击刷新登录状态</a></h2>
+		</div>
+	</body>
+	<script type="text/javascript">
+	</script>
+</html>

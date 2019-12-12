@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>孔夫子旧书网购物车</title>
+		<link rel="icon" href="./images/pclogo.jpg">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/iconfont.css">
+		<link rel="stylesheet" href="./css/index-kbook.css">
+		<style type="text/css">
+			h1{
+				margin-left:600px;
+				font-size:24px;
+			}
+			table{
+				width:1000px;
+				margin-left:200px;
+				border:1px solid #eee;
+				color:#000;
+				font-size:16px;
+			}
+			thead{
+				height:40px;
+				border-bottom:1px solid #ccc;
+			}
+			thead tr{
+				height:40px;
+			}
+			thead tr td{
+				text-align:center;
+				line-height:40px;
+			}
+			tbody tr{
+				height:50px;
+			}
+			tbody tr td{
+				text-align:center;
+				line-height:50px;
+			}
+			tbody td img{
+				width:80px;
+				height:80px;
+			}
+			.addCart,.del{
+				display:block;
+				height:30px;
+				background:darkred;
+				text-align:center;
+				line-height:30px;
+				color:#fff;
+			}
+			.big{
+				width:320px;
+				height:240px;
+				border:1px solid #eee;
+				overflow:hidden;
+				position:absolute;
+				left:322px;
+				top:0;
+				display:none;
+			}
+			.item-img-bg{
+				position:relative;
+			}
+			.mask{
+				display:none;
+				width:160px;
+				height:120px;
+				background:#fff;
+				position:absolute;
+				top:0;
+				left:0;
+				opacity:0.4;
+				cursor: move;
+			}
+			.bigImg{
+				width:640px;
+				height:480px;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div id="kb-top">
+			<div class="top-inner kb-container">
+				<div class="slogan-box">
+					<span class="text">网罗天下图书</span>
+					<span>传承中华文明</span>
+				</div>
+				<div class="top-right">
+					<ul class="clearfix">
+						<li class="login-resister">
+							<a href="javascript:;">登录/注册</a>
+							<div class="login-box">
+								<div class="login-btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+								<div class="register-btn">免费注册</div>
+							</div>
+						</li>
+						<li><a href="javascript:;">消息</a></li>
+						<li><a href="javascript:;" class="shoppingCart"><i class="iconfont icon-ai66"></i>购物车</a></li>
+						<li><a href="javascript:;">我的订单</a></li>
+						<li class="personal-center">
+							<a href="#">个人中心</a>
+							<ul class="personal-box">
+								<li><a href="javascript:;">我的订单</a></li>
+								<li><a href="javascript:;">收藏</a></li>
+								<li><a href="javascript:;">拍卖交易</a></li>
+								<li><a href="javascript:;">我的竞拍</a></li>
+								<li><a href="javascript:;">我的好友</a></li>
+								<li><a href="javascript:;">资金账户</a></li>
+							</ul>
+						</li>
+						<li class="seller-center">
+							<a href="#">卖家中心</a>
+							<ul class="seller-box">
+								<li><a href="javascript:;">免费摆书摊</a></li>
+								<li><a href="javascript:;">申请开店</a></li>
+								<li><a href="javascript:;">申请拍卖会员</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">客服</a></li>
+						<li><a href="javascript:;">手机版</a></li>
+						<li><a href="javascript:;">|</a></li>
+						<li><a href="javascript:;">送至北京</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 新书广场 -->
+		<div id="newSquareBox" class="newSquare-box">
+			<div class="newSquare-box-title home">
+				<span>孔夫子新书广场</span><span class="ziying">自营</span><i>/</i><a href="javascript:;">进店逛逛</a>
+			</div>
+			<div class="newSquare-box-con">
+				<span class="item">
+					<div class="item-img"><!-- 放大镜盒子 -->
+						<div class="item-img-bg"><!-- 小图片盒子 -->
+							<a href="javascript:;"><img src="./images/img69.jpg"></a><!-- 小图片 -->
+							<div class="mask"></div><!-- 遮罩层 -->
+						</div>
+						<div class="big"><!-- 大图片盒子 -->
+							<img src="./images/img70.jpg" alt="" class="bigImg"><!-- 大图片 -->
+						</div>
+					</div>
+					<div class="item-con">
+						<div class="item-con-title">
+							<a href="javascript:;">
+								<span class="ziying">自营</span>
+								独家|吴新雷先生 签名钤印 《我和昆曲有故事》（精装）毛边本
+							</a>
+						</div>
+						<div class="item-con-dis"></div>
+						<div class="tag">
+							<span>限量</span>
+							<span>签名</span>
+							<span>毛边本</span>
+							<span>钤印</span>
+						</div>
+						<div class="item-bottom clearfix">
+							<div class="f-left">
+								<span style="font-size: 16px;">￥</span>58.00<span>包邮</span>
+							</div>
+							<div class="f-right">
+								<div class="btn">立即抢购</div>
+							</div>
+						</div>
+					</div>
+				</span>
+			</div>
+		</div>
+		<h1>购物车列表</h1>
+		<div id="cartBox">
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="./js/shoppingcart.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript">
+		var small=getElements('item-img-bg')[0];
+		var big=getElements('big')[0];
+		var mask=getElements('mask')[0];
+		var bigImg=getElements('bigImg')[0];
+		var box=getElements('item-img')[0];
+		
+		small.onmouseenter=function(){
+			mask.style.display="block";
+			big.style.display="block";
+		}
+		small.onmouseleave=function(){
+			mask.style.display="none";
+			big.style.display="none";
+		}
+		small.onmousemove=function(e){
+			var event=window.event||e;
+			//鼠标在small中的位置 
+			var pageX=event.clientX+scroll().left;
+			var pageY=event.clientY+scroll().top;
+			var x=pageX-box.offsetLeft-mask.offsetWidth/2;
+			var y=pageY-box.offsetTop-mask.offsetHeight/2;
+			//mask不能超出small
+			var maxX=small.offsetWidth-mask.offsetWidth;
+			var maxY=small.offsetHeight-mask.offsetHeight;
+			if(x<0){
+				x=0;
+			}
+			if(y<0){
+				y=0;
+			}
+			if(x>maxX){
+				x=maxX;
+			}
+			if(y>maxY){
+				y=maxY;
+			}
+			//mask定位
+			mask.style.left=x+"px";
+			mask.style.top=y+"px";
+			//大图片显示相应部分
+			bigImg.style.marginLeft=-x/small.offsetWidth*bigImg.offsetWidth+"px";
+			bigImg.style.marginTop=-y/small.offsetHeight*bigImg.offsetHeight+"px";
+		}
+		
+	</script>
+	
+</html>
